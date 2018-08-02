@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="FirstTestSuite" verbose="1" >
+  <test name="LoginTest" >
+	    <classes>
+	       <class name="com.qbr.TestSteps.LoginTest">
+	       <methods>
+	       		<exclude name="positiveLoginTest"></exclude>
+	       </methods>
+	       </class>
+	       <!--  <class name="com.qantas.rebrand.smoke.cucumber.runners.QbrDashboardTestRunner" />  -->
+	    </classes>
+  </test>
+  </suite>
+

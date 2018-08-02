@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FirstTestSuite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.qbr.utilities.TestListener"/>
+  </listeners>
+  <test name="LoginTest-ch(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qantas.cucumberRunner.loginRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.qantas.cucumberRunner.loginRunner -->
+    </classes>
+  </test> <!-- LoginTest-ch(failed) -->
+</suite> <!-- Failed suite [FirstTestSuite] -->

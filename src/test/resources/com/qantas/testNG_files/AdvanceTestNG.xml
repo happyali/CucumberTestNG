@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="FirstTestSuite" parallel="false">
+	<listeners>
+		<listener class-name="com.qbr.utilities.TestListener"></listener>
+	</listeners>
+<!-- 		  <test name="LoginTest-ff" >
+		  	<parameter name="browser" value="firefox"/>
+		    	<classes>
+		       		<class name="com.qbr.TestSteps.LoginTest"/>
+		       		 <class name="com.qantas.rebrand.smoke.cucumber.runners.QbrDashboardTestRunner" /> 
+		       			<methods>
+	       					<exclude name="positiveLoginTest"></exclude>
+	       				</methods>
+		    	</classes>
+		  </test> -->
+		  
+		  <test name="LoginTest-ch" >
+		  	<parameter name="browser" value="chrome"/>
+		    	<classes>
+		       		<!-- <class name="com.qbr.TestSteps.LoginTest"></class> -->
+		       		 <class name="com.qbr.cucumberRunner.LoginRunner" />
+		    	</classes>
+		  </test>
+</suite>
+
